@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Salesforce College App Showcase | Francis' Website</title>
+    <link rel="stylesheet" href="NewCollegeApp.css" />
+    <link rel="shortcut icon" type="x-icon" href="../Images/Icon.PNG" />
+    <!--Highlight JS-->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/stackoverflow-dark.min.css">
+</head>
+
+
+<body>
+    <div class="SalesforceTitle">
+        <h1>St. Thomas New College Application Showcase</h1>
+        <img src="../Images/Salesforce.gif" width="80%" draggable="false" />
+        <h4>The official St. Thomas Undergrad/Grad Applications can be found in the <a href="https://www.stthomas.edu/application/index.html" target="_blank">Official St. Thomas Website.</a></h4>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- College App -->
+    <section id="Application">
+        <h1>Salesforce Objects and Fields</h1>
+        <div class="showcaseApp">
+            <h2>College App Requirements</h2>
+            <div class="sidebyside">
+                <img src="../Images/RequirementImage.PNG" draggable="false" />
+                <img src="../Images/RequirementStagingImage.PNG" draggable="false" />
+            </div>
+        </div>
+
+        <div class="showcaseApp">
+            <h2>App Requirement Items</h2>
+            <div class="sidebyside">
+                <img src="../Images/RequirementItemImage.PNG" draggable="false" />
+                <img src="../Images/RequirementItemStaging1Image.PNG" draggable="false" />
+                <img src="../Images/RequirementItemStaging2Image.PNG" draggable="false" />
+            </div>
+        </div>
+
+        <div class="showcaseApp">
+            <h2>App Question Sample</h2>
+            <div class="sidebyside">
+                <h4>Part 1:</h4>
+                <img src="../Images/Question1.PNG" draggable="false" />
+                <h4>Part 2:</h4>
+                <img src="../Images/Question2.PNG" draggable="false" />
+                <h4>Part 3:</h4>
+                <img src="../Images/Question3.PNG" draggable="false" />
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- Widgets -->
+    <section id="Widget">
+        <h1>College Application Widgets Showcase</h1>
+
+        <div class="showcaseWidget">
+
+
+
+
+            <h2>Scholarship Widget</h2>
+            <div class="widgetContainer">
+                <div class="widgetCode">
+                    <!--Beginning CODE-->
+                    <h3>Scholarship</h3>
+                    <br>
+                    <div class="USTline2"></div>
+                    <div class="USTdynamic-txts2">
+                        <p class="ScholarshipInfo">
+                            St. Thomas offers additional scholarships based on interest and academic major. 
+                            These competitive scholarship programs have separate scholarship applications.
+                        </p>
+                    </div>
+                
+    
+                    <div class="USTline2"></div>
+                    <p>Want to apply and learn more?</p>
+                    <br>
+                    <a href="https://uofstthomasmn.force.com/Admissions/scholarshiphome" target="_blank">
+                        <button type="submit" class="Events"><b>Apply for Scholarships</b></button>
+                    </a>
+                    </br>
+
+                    <style>
+                        .Events {
+                            background-color: #911BC3;
+                            border-radius: 10px;
+                            border: 2px double #DCD5DD;
+                            color: white;
+                            font-size: 15px;
+                            padding: 10px;
+                            width: 200px;
+                            cursor: pointer;
+                            margin: 10px;
+                        }
+                        button:hover {
+                            background-color: #6d3696;
+                            color: white;
+                        }
+
+                        .ScholarshipInfo{
+                            text-align: left;
+                        }
+                
+                        .USTline2 {
+                            border-bottom: 5px solid #5f19a0;
+                            margin-top: 5px;
+                            margin-bottom: 4px;
+                            width: 100%;
+                        }
+                        .USTdynamic-txts2{
+                            color: #6d3696;
+                        }
+                </style>
+                <!--END CODE-->
+                </div>
+            </div>
+            <div class="displaySourceCode">
+                <pre>
+                    <code>
+                        &lt;!-- Code has been modified for display purposes --&gt;
+
+                        &lt;h3&gt;Scholarship&lt;/h3&gt;
+                        &lt;br&gt;
+                        &lt;div class=&quot;USTline2&quot;&gt;&lt;/div&gt;
+                        &lt;div class=&quot;USTdynamic-txts2&quot;&gt;
+                            &lt;p class=&quot;ScholarshipInfo&quot;&gt;
+                                St. Thomas offers additional scholarships based on interest and academic major. 
+                                These competitive scholarship programs have separate scholarship applications.
+                            &lt;/p&gt;
+                        &lt;/div&gt;
+                    
+        
+                        &lt;div class=&quot;USTline2&quot;&gt;&lt;/div&gt;
+                        &lt;p&gt;Want to apply and learn more?&lt;/p&gt;
+                        &lt;br&gt;
+                        &lt;a href=&quot;https://uofstthomasmn.force.com/Admissions/scholarshiphome&quot; target=&quot;_blank&quot;&gt;
+                            &lt;button type=&quot;submit&quot; class=&quot;Events&quot;&gt;&lt;b&gt;Apply for Scholarships&lt;/b&gt;&lt;/button&gt;
+                        &lt;/a&gt;
+                        &lt;/br&gt;
+    
+                        &lt;style&gt;
+                            .Events {
+                                background-color: #911BC3;
+                                border-radius: 10px;
+                                border: 2px double #DCD5DD;
+                                color: white;
+                                font-size: 15px;
+                                padding: 10px;
+                                width: 200px;
+                                cursor: pointer;
+                                margin: 10px;
+                            }
+                            button:hover {
+                                background-color: #6d3696;
+                                color: white;
+                            }
+    
+                            .ScholarshipInfo{
+                                text-align: left;
+                            }
+                    
+                            .USTline2 {
+                                border-bottom: 5px solid #5f19a0;
+                                margin-top: 5px;
+                                margin-bottom: 4px;
+                                width: 100%;
+                            }
+                            .USTdynamic-txts2{
+                                color: #6d3696;
+                            }
+                    &lt;/style&gt;
+                    </code>
+                </pre>
+            </div>
+
+
+
+
+            <h2>Contact Information Widget</h2>
+            <div class="widgetContainer">
+                <div class="widgetCode">
+                    <!--Beginning CODE-->
+                    <h3>Contact Admissions</h3>
+                    <br>
+                    <p class="AdmissionInfo">
+                        Office of Admissions
+                        <br>
+                        Mail 5017
+                        <br>
+                        2115 Summit Avenue
+                        <br>
+                        St. Paul, MN, 55105-1096
+                        <br>
+                        Phone: (651) 962-6150
+                        <br>
+                        admissions@stthomas.edu
+                    </p>
+                    <div class="USTlineborder"></div>
+                    <br>
+                    <ul class="USTSocialMediaIcons">
+                        <li class="instagram">
+                            <a href="https://instagram.com/uofstthomasmn/" target="_blank" class="block__social__link">
+                                <svg viewBox="0 0 30 30" class="USTblock__social__svgINSTA">
+                                    <path d="M15.4,11.2c-2.3,0-4.2,1.9-4.2,4.2c0,2.3,1.9,4.2,4.2,4.2c2.3,0,4.2-1.9,4.2-4.2C19.6,13.1,17.7,11.2,15.4,11.2z
+                                M15.4,18.2c-1.6,0-2.8-1.3-2.8-2.8c0-1.6,1.3-2.8,2.8-2.8s2.8,1.2,2.8,2.8C18.2,17,16.9,18.2,15.4,18.2z"></path>
+                                    <path d="M19.2,7h-7.7C9,7,7,9,7,11.5v7.7c0,2.6,2,4.6,4.5,4.6h7.7c2.6,0,4.6-2.1,4.6-4.6v-7.7C23.7,9,21.7,7,19.2,7z M22.4,19.2
+                                c0,1.8-1.5,3.2-3.2,3.2h-7.7c-1.7-0.1-3.1-1.5-3.1-3.2v-7.7c0-1.7,1.4-3.1,3.1-3.1h7.7c1.8,0,3.2,1.4,3.2,3.1V19.2z"></path>
+                                    <circle cx="19.8" cy="11" r="1"></circle>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="tiktok">
+                            <a href="https://www.tiktok.com/@universityofstthomas?lang=en" target="_blank" class="block__social__link">
+                                <svg height="55px" width="30px" viewBox="0 0 30 30" class="USTblock__social__svgTIKTOK">
+                                    <g transform="translate(-10,-10)">
+                                        <path d="M38.0766847,15.8542954 C36.0693906,15.7935177 34.2504839,14.8341149 32.8791434,13.5466056 C32.1316475,12.8317108 31.540171,11.9694126 31.1415066,11.0151329 C30.7426093,10.0603874 30.5453728,9.03391952 30.5619062,8 L24.9731521,8 L24.9731521,28.8295196 C24.9731521,32.3434487 22.8773693,34.4182737 20.2765028,34.4182737 C19.6505623,34.4320127 19.0283477,34.3209362 18.4461858,34.0908659 C17.8640239,33.8612612 17.3337909,33.5175528 16.8862248,33.0797671 C16.4386588,32.6422142 16.0833071,32.1196657 15.8404292,31.5426268 C15.5977841,30.9658208 15.4727358,30.3459348 15.4727358,29.7202272 C15.4727358,29.0940539 15.5977841,28.4746337 15.8404292,27.8978277 C16.0833071,27.3207888 16.4386588,26.7980074 16.8862248,26.3604545 C17.3337909,25.9229017 17.8640239,25.5791933 18.4461858,25.3491229 C19.0283477,25.1192854 19.6505623,25.0084418 20.2765028,25.0219479 C20.7939283,25.0263724 21.3069293,25.1167239 21.794781,25.2902081 L21.794781,19.5985278 C21.2957518,19.4900128 20.7869423,19.436221 20.2765028,19.4380839 C18.2431278,19.4392483 16.2560928,20.0426009 14.5659604,21.1729264 C12.875828,22.303019 11.5587449,23.9090873 10.7814424,25.7878401 C10.003907,27.666593 9.80084889,29.7339663 10.1981162,31.7275214 C10.5953834,33.7217752 11.5748126,35.5530237 13.0129853,36.9904978 C14.4509252,38.4277391 16.2828722,39.4064696 18.277126,39.8028054 C20.2711469,40.1991413 22.3382874,39.9951517 24.2163416,39.2169177 C26.0948616,38.4384508 27.7002312,37.1209021 28.8296253,35.4300711 C29.9592522,33.7397058 30.5619062,31.7522051 30.5619062,29.7188301 L30.5619062,18.8324027 C32.7275484,20.3418321 35.3149087,21.0404263 38.0766847,21.0867664 L38.0766847,15.8542954 Z"></path>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="youtube">
+                            <a href="https://www.youtube.com/universityofstthomas/" target="_blank" class="block__social__link">
+                                <svg viewBox="0 0 30 30" class="USTblock__social__svgYT">
+                                    <path d="M22.5,11.5c-0.1-0.9-0.8-1.6-1.6-1.8c0,0-2.7-0.2-5.8-0.2S9.1,9.7,9.1,9.7h0c-0.7,0-1.6,1.1-1.6,1.8
+                            c-0.1,1.1-0.2,2.2-0.2,3.3c0,1.1,0.1,2.2,0.2,3.2c0,1.1,0.8,2,1.8,2.2c0,0,2.9,0.2,5.8,0.2s5.7-0.2,5.7-0.2c0.9-0.2,1.6-0.9,1.7-1.9
+                            c0.2-1.3,0.3-2.5,0.2-3.8C22.7,12.8,22.5,11.5,22.5,11.5z M13.7,17.1v-4.3l3.9,2.1L13.7,17.1z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="facebook">
+                            <a href="https://www.facebook.com/UofStThomasMN/" target="_blank" class="block__social__link">
+                                <svg viewBox="0 0 30 30" class="USTblock__social__svgFB">
+                                    <path d="M17.5,9.7H19V7h-2.4c-2.9,0-3.9,1.3-3.9,3.6v1.6H11V15h1.8v8h3.5v-8h2.4l0.3-2.8h-2.7v-1.4C16.3,10.1,16.4,9.7,17.5,9.7z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="twitter">
+                            <a href="https://twitter.com/UofStThomasMN/" target="_blank" method="get">
+                                <svg viewBox="0 0 30 30" class="USTblock__social__svgTW">
+                                    <path d="M8.7,20.4c-0.3,0-0.6,0-0.9,0.1c0.6,0.4,1.3,0.7,2,0.9c2.3,0.7,4.8,0.4,6.9-0.8c1.5-1,2.8-2.4,3.5-4.1
+                            c0.4-1,0.6-2.1,0.7-3.2c0-0.5,0-0.6,0.6-1.1c0.3-0.3,0.5-0.5,0.7-0.8c0.1-0.2,0.1-0.2-0.4,0c-0.9,0.3-1,0.3-0.6-0.2
+                            c0.3-0.3,0.6-0.7,0.7-1.1c0,0-0.1,0-0.3,0.1c-0.3,0.1-0.6,0.3-0.9,0.4l-0.6,0.2l-0.5-0.4c-0.3-0.2-0.6-0.4-0.9-0.5
+                            c-0.4,0.1-1,0.1-1.6,0.2c-1.3,0.4-2.1,1.7-2,3v0.5l-0.5-0.1c-1.9-0.2-3.7-1.1-5-2.5l-0.7-0.7L8.7,11c-0.4,1.1-0.1,2.3,0.6,3.1
+                            c0.4,0.4,0.3,0.5-0.4,0.2c-0.2-0.1-0.3-0.1-0.5-0.1c0,0.5,0.2,1,0.4,1.4c0.3,0.6,0.8,1.1,1.4,1.4l0.5,0.2h-0.6c-0.6,0-0.6,0-0.6,0.2
+                            c0.4,0.8,1.1,1.5,2,1.7l0.6,0.2l-0.6,0.3C10.6,20.1,9.7,20.4,8.7,20.4z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+
+
+
+                    <style>
+                        .AdmissionInfo{
+                            text-align: left;
+                        }
+
+                        .USTSocialMediaIcons{
+                            margin: 0px !important;
+                            text-align: center;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                        .USTSocialMediaIcons li{
+                            position: relative;
+                            display: inline-block;
+                            color: white;
+                            font-size: 30px;
+                            line-height: 50px;
+                            border-radius: 20%;
+                            margin: 8px 8px;
+                            cursor: pointer;
+                            transition: .5s;
+                        }
+                        .USTSocialMediaIcons li a{
+                            height: 55px;
+                            width: 55px;
+                            position: relative;
+                            display: inline-block;
+                            margin-bottom: -1px;
+                            fill: #6f3d99;
+                            border-radius: 20%;
+                            cursor: pointer;
+                            transition: .5s;
+                            vertical-align: bottom;
+                        }
+                        .USTblock__social__svgINSTA{
+                            right: 1px;
+                        }
+                        .USTblock__social__svgTIKTOK{
+                            right: -1px;
+                        }
+                        .USTSocialMediaIcons li a:before{
+                            position: absolute;
+                            content: '';
+                            top: 0;
+                            left: 0;
+                            height: 100%;
+                            width: 100%;
+                            border-radius: 50%;
+                            z-index: -1;
+                            transform: scale(0.9);
+                        }
+                        .USTSocialMediaIcons li a:hover:before{
+                            transform: scale(1.9);
+                        }
+                        .USTSocialMediaIcons li a:hover:before{
+                            filter: blur(3px);
+                            transform: scale(1.2);
+                        }
+                        .USTSocialMediaIcons a:hover{
+                            fill: #ffa500;
+                        }
+                        .USTSocialMediaIcons li{
+                            border-bottom: 5px transparent solid;
+                        }
+                        .USTSocialMediaIcons li:hover{
+                            border-bottom: 5px purple solid;
+                        }
+                        .USTSocialMediaIcons li.instagram a:hover{
+                            fill: rgb(170, 40, 170);
+                        }
+                        .USTSocialMediaIcons li.tiktok a:hover{
+                            fill: rgb(170, 40, 170);
+                        }
+                        .USTSocialMediaIcons li.youtube a:hover{
+                            fill: rgb(170, 40, 170);
+                        }
+                        .USTSocialMediaIcons li.facebook a:hover{
+                            fill: rgb(170, 40, 170);
+                        }
+                        .USTSocialMediaIcons li.twitter a:hover{
+                            fill: rgb(170, 40, 170);
+                        }
+                        .USTlineborder {
+                            border-bottom: 4px dotted #5f19a0;
+                            margin-top: 5px;
+                            margin-bottom: 1px;
+                            width: 100%;
+                        }
+                    </style>
+                    <!--END CODE-->
+                </div>
+            </div>
+            <div class="displaySourceCode">
+                <pre>
+                    <code>
+                        &lt;!-- Code has been modified for display purposes --&gt;
+
+                        &lt;h3&gt;Contact Admissions&lt;/h3&gt;
+                        &lt;br&gt;
+                        &lt;p class=&quot;AdmissionInfo&quot;&gt;
+                            Office of Admissions
+                            &lt;br&gt;
+                            Mail 5017
+                            &lt;br&gt;
+                            2115 Summit Avenue
+                            &lt;br&gt;
+                            St. Paul, MN, 55105-1096
+                            &lt;br&gt;
+                            Phone: (651) 962-6150
+                            &lt;br&gt;
+                            admissions@stthomas.edu
+                        &lt;/p&gt;
+                        &lt;div class=&quot;USTlineborder&quot;&gt;&lt;/div&gt;
+                        &lt;br&gt;
+                        &lt;ul class=&quot;USTSocialMediaIcons&quot;&gt;
+                            &lt;li class=&quot;instagram&quot;&gt;
+                                &lt;a href=&quot;https://instagram.com/uofstthomasmn/&quot; target=&quot;_blank&quot; class=&quot;block__social__link&quot;&gt;
+                                    &lt;svg viewBox=&quot;0 0 30 30&quot; class=&quot;USTblock__social__svgINSTA&quot;&gt;
+                                        &lt;path d=&quot;M15.4,11.2c-2.3,0-4.2,1.9-4.2,4.2c0,2.3,1.9,4.2,4.2,4.2c2.3,0,4.2-1.9,4.2-4.2C19.6,13.1,17.7,11.2,15.4,11.2z
+                                    M15.4,18.2c-1.6,0-2.8-1.3-2.8-2.8c0-1.6,1.3-2.8,2.8-2.8s2.8,1.2,2.8,2.8C18.2,17,16.9,18.2,15.4,18.2z&quot;&gt;&lt;/path&gt;
+                                        &lt;path d=&quot;M19.2,7h-7.7C9,7,7,9,7,11.5v7.7c0,2.6,2,4.6,4.5,4.6h7.7c2.6,0,4.6-2.1,4.6-4.6v-7.7C23.7,9,21.7,7,19.2,7z M22.4,19.2
+                                    c0,1.8-1.5,3.2-3.2,3.2h-7.7c-1.7-0.1-3.1-1.5-3.1-3.2v-7.7c0-1.7,1.4-3.1,3.1-3.1h7.7c1.8,0,3.2,1.4,3.2,3.1V19.2z&quot;&gt;&lt;/path&gt;
+                                        &lt;circle cx=&quot;19.8&quot; cy=&quot;11&quot; r=&quot;1&quot;&gt;&lt;/circle&gt;
+                                    &lt;/svg&gt;
+                                &lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li class=&quot;tiktok&quot;&gt;
+                                &lt;a href=&quot;https://www.tiktok.com/@universityofstthomas?lang=en&quot; target=&quot;_blank&quot; class=&quot;block__social__link&quot;&gt;
+                                    &lt;svg height=&quot;55px&quot; width=&quot;30px&quot; viewBox=&quot;0 0 30 30&quot; class=&quot;USTblock__social__svgTIKTOK&quot;&gt;
+                                        &lt;g transform=&quot;translate(-10,-10)&quot;&gt;
+                                            &lt;path d=&quot;M38.0766847,15.8542954 C36.0693906,15.7935177 34.2504839,14.8341149 32.8791434,13.5466056 C32.1316475,12.8317108 31.540171,11.9694126 31.1415066,11.0151329 C30.7426093,10.0603874 30.5453728,9.03391952 30.5619062,8 L24.9731521,8 L24.9731521,28.8295196 C24.9731521,32.3434487 22.8773693,34.4182737 20.2765028,34.4182737 C19.6505623,34.4320127 19.0283477,34.3209362 18.4461858,34.0908659 C17.8640239,33.8612612 17.3337909,33.5175528 16.8862248,33.0797671 C16.4386588,32.6422142 16.0833071,32.1196657 15.8404292,31.5426268 C15.5977841,30.9658208 15.4727358,30.3459348 15.4727358,29.7202272 C15.4727358,29.0940539 15.5977841,28.4746337 15.8404292,27.8978277 C16.0833071,27.3207888 16.4386588,26.7980074 16.8862248,26.3604545 C17.3337909,25.9229017 17.8640239,25.5791933 18.4461858,25.3491229 C19.0283477,25.1192854 19.6505623,25.0084418 20.2765028,25.0219479 C20.7939283,25.0263724 21.3069293,25.1167239 21.794781,25.2902081 L21.794781,19.5985278 C21.2957518,19.4900128 20.7869423,19.436221 20.2765028,19.4380839 C18.2431278,19.4392483 16.2560928,20.0426009 14.5659604,21.1729264 C12.875828,22.303019 11.5587449,23.9090873 10.7814424,25.7878401 C10.003907,27.666593 9.80084889,29.7339663 10.1981162,31.7275214 C10.5953834,33.7217752 11.5748126,35.5530237 13.0129853,36.9904978 C14.4509252,38.4277391 16.2828722,39.4064696 18.277126,39.8028054 C20.2711469,40.1991413 22.3382874,39.9951517 24.2163416,39.2169177 C26.0948616,38.4384508 27.7002312,37.1209021 28.8296253,35.4300711 C29.9592522,33.7397058 30.5619062,31.7522051 30.5619062,29.7188301 L30.5619062,18.8324027 C32.7275484,20.3418321 35.3149087,21.0404263 38.0766847,21.0867664 L38.0766847,15.8542954 Z&quot;&gt;&lt;/path&gt;
+                                        &lt;/g&gt;
+                                    &lt;/svg&gt;
+                                &lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li class=&quot;youtube&quot;&gt;
+                                &lt;a href=&quot;https://www.youtube.com/universityofstthomas/&quot; target=&quot;_blank&quot; class=&quot;block__social__link&quot;&gt;
+                                    &lt;svg viewBox=&quot;0 0 30 30&quot; class=&quot;USTblock__social__svgYT&quot;&gt;
+                                        &lt;path d=&quot;M22.5,11.5c-0.1-0.9-0.8-1.6-1.6-1.8c0,0-2.7-0.2-5.8-0.2S9.1,9.7,9.1,9.7h0c-0.7,0-1.6,1.1-1.6,1.8
+                                c-0.1,1.1-0.2,2.2-0.2,3.3c0,1.1,0.1,2.2,0.2,3.2c0,1.1,0.8,2,1.8,2.2c0,0,2.9,0.2,5.8,0.2s5.7-0.2,5.7-0.2c0.9-0.2,1.6-0.9,1.7-1.9
+                                c0.2-1.3,0.3-2.5,0.2-3.8C22.7,12.8,22.5,11.5,22.5,11.5z M13.7,17.1v-4.3l3.9,2.1L13.7,17.1z&quot;&gt;&lt;/path&gt;
+                                    &lt;/svg&gt;
+                                &lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li class=&quot;facebook&quot;&gt;
+                                &lt;a href=&quot;https://www.facebook.com/UofStThomasMN/&quot; target=&quot;_blank&quot; class=&quot;block__social__link&quot;&gt;
+                                    &lt;svg viewBox=&quot;0 0 30 30&quot; class=&quot;USTblock__social__svgFB&quot;&gt;
+                                        &lt;path d=&quot;M17.5,9.7H19V7h-2.4c-2.9,0-3.9,1.3-3.9,3.6v1.6H11V15h1.8v8h3.5v-8h2.4l0.3-2.8h-2.7v-1.4C16.3,10.1,16.4,9.7,17.5,9.7z&quot;&gt;&lt;/path&gt;
+                                    &lt;/svg&gt;
+                                &lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li class=&quot;twitter&quot;&gt;
+                                &lt;a href=&quot;https://twitter.com/UofStThomasMN/&quot; target=&quot;_blank&quot; method=&quot;get&quot;&gt;
+                                    &lt;svg viewBox=&quot;0 0 30 30&quot; class=&quot;USTblock__social__svgTW&quot;&gt;
+                                        &lt;path d=&quot;M8.7,20.4c-0.3,0-0.6,0-0.9,0.1c0.6,0.4,1.3,0.7,2,0.9c2.3,0.7,4.8,0.4,6.9-0.8c1.5-1,2.8-2.4,3.5-4.1
+                                c0.4-1,0.6-2.1,0.7-3.2c0-0.5,0-0.6,0.6-1.1c0.3-0.3,0.5-0.5,0.7-0.8c0.1-0.2,0.1-0.2-0.4,0c-0.9,0.3-1,0.3-0.6-0.2
+                                c0.3-0.3,0.6-0.7,0.7-1.1c0,0-0.1,0-0.3,0.1c-0.3,0.1-0.6,0.3-0.9,0.4l-0.6,0.2l-0.5-0.4c-0.3-0.2-0.6-0.4-0.9-0.5
+                                c-0.4,0.1-1,0.1-1.6,0.2c-1.3,0.4-2.1,1.7-2,3v0.5l-0.5-0.1c-1.9-0.2-3.7-1.1-5-2.5l-0.7-0.7L8.7,11c-0.4,1.1-0.1,2.3,0.6,3.1
+                                c0.4,0.4,0.3,0.5-0.4,0.2c-0.2-0.1-0.3-0.1-0.5-0.1c0,0.5,0.2,1,0.4,1.4c0.3,0.6,0.8,1.1,1.4,1.4l0.5,0.2h-0.6c-0.6,0-0.6,0-0.6,0.2
+                                c0.4,0.8,1.1,1.5,2,1.7l0.6,0.2l-0.6,0.3C10.6,20.1,9.7,20.4,8.7,20.4z&quot;&gt;&lt;/path&gt;
+                                    &lt;/svg&gt;
+                                &lt;/a&gt;
+                            &lt;/li&gt;
+                        &lt;/ul&gt;
+    
+    
+    
+                        &lt;style&gt;
+                            .AdmissionInfo{
+                                text-align: left;
+                            }
+    
+                            .USTSocialMediaIcons{
+                                margin: 0px !important;
+                                text-align: center;
+                                align-items: center;
+                                justify-content: center;
+                            }
+                            .USTSocialMediaIcons li{
+                                position: relative;
+                                display: inline-block;
+                                color: white;
+                                font-size: 30px;
+                                line-height: 50px;
+                                border-radius: 20%;
+                                margin: 8px 8px;
+                                cursor: pointer;
+                                transition: .5s;
+                            }
+                            .USTSocialMediaIcons li a{
+                                height: 55px;
+                                width: 55px;
+                                position: relative;
+                                display: inline-block;
+                                margin-bottom: -1px;
+                                fill: #6f3d99;
+                                border-radius: 20%;
+                                cursor: pointer;
+                                transition: .5s;
+                                vertical-align: bottom;
+                            }
+                            .USTblock__social__svgINSTA{
+                                right: 1px;
+                            }
+                            .USTblock__social__svgTIKTOK{
+                                right: -1px;
+                            }
+                            .USTSocialMediaIcons li a:before{
+                                position: absolute;
+                                content: '';
+                                top: 0;
+                                left: 0;
+                                height: 100%;
+                                width: 100%;
+                                border-radius: 50%;
+                                z-index: -1;
+                                transform: scale(0.9);
+                            }
+                            .USTSocialMediaIcons li a:hover:before{
+                                transform: scale(1.9);
+                            }
+                            .USTSocialMediaIcons li a:hover:before{
+                                filter: blur(3px);
+                                transform: scale(1.2);
+                            }
+                            .USTSocialMediaIcons a:hover{
+                                fill: #ffa500;
+                            }
+                            .USTSocialMediaIcons li{
+                                border-bottom: 5px transparent solid;
+                            }
+                            .USTSocialMediaIcons li:hover{
+                                border-bottom: 5px purple solid;
+                            }
+                            .USTSocialMediaIcons li.instagram a:hover{
+                                fill: rgb(170, 40, 170);
+                            }
+                            .USTSocialMediaIcons li.tiktok a:hover{
+                                fill: rgb(170, 40, 170);
+                            }
+                            .USTSocialMediaIcons li.youtube a:hover{
+                                fill: rgb(170, 40, 170);
+                            }
+                            .USTSocialMediaIcons li.facebook a:hover{
+                                fill: rgb(170, 40, 170);
+                            }
+                            .USTSocialMediaIcons li.twitter a:hover{
+                                fill: rgb(170, 40, 170);
+                            }
+                            .USTlineborder {
+                                border-bottom: 4px dotted #5f19a0;
+                                margin-top: 5px;
+                                margin-bottom: 1px;
+                                width: 100%;
+                            }
+                        &lt;/style&gt;
+                    </code>
+                </pre>
+            </div>
+
+
+
+
+            <section id="WidgetAnimation"><h2>Pre-Checklist Widget (Animation)</h2></section>
+            <a href="#WidgetAnimation"><button class="WidgetRefreshPage" onClick="window.location.reload();">Refresh to see Widget Animation</button></a>
+            <div class="widgetContainerContentTOP">
+                <div class="widgetCode">
+                    <!--Beginning CODE-->
+                    <div class="USTExitButton">
+                        <div class="animated-text">
+                            <div class="Welcome">
+                                <b>Welcome to the St. Thomas Application! 🎉</b>
+                            </div>
+                            <div class="Welcome">
+                                <b>Please begin your application to view specific requirements.</b>
+                            </div>
+                        </div>
+                        <!-- <button onclick="webOnlyAlert_closeClicked()" aria-label="Close" id="close__message" class="closeButton" style="color:#fff;">
+                            <strong>X</strong>
+                        </button> -->
+                    </div>
+                    <script type="text/javascript">
+                        document.addEventListener('DOMContentLoaded', function () {
+                            if (!webOnlyAlert_readCookie("hide_alert_message")) {
+                                document.querySelector('.USTExitButton').closest('.slds-card').style.display = 'block';
+                            } else {
+                                document.querySelector('.USTExitButton').closest('.slds-card').style.display = 'none';
+                            }
+                        });
+                        function webOnlyAlert_createCookie(cname, cvalue, exdays) {
+                            const d = new Date();
+                            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+                            let expires = "expires=" + d.toUTCString();
+                            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+                        }
+                        function webOnlyAlert_readCookie(a) {
+                            // eslint-disable-next-line
+                            const b = document.cookie.match("(^|[^;]+)\\s*" + a + "\\s*=\\s*([^;]+)");
+                            return b ? b.pop() : false;
+                        }
+                        function webOnlyAlert_closeClicked() {
+                            webOnlyAlert_createCookie("hide_alert_message", true, 1); // cookie will live for 1 hour. the value is data.exp in the original, allowing the expiration date to come from the JSON object, but I broke that here.
+                            document.querySelector('.USTExitButton').closest('.slds-card').style.display = 'none';
+                        }
+                    </script>
+
+                    <style>
+                        /* Button has been commented out */
+                        .USTExitButton{
+                            font-size: 1rem;
+                            display: block;
+                            padding: 5px 15px 5px 15px;
+                            border-left: #5f19a0 solid 5px;
+                        }
+                        .USTExitButton .closeButton{
+                            background-color: #911BC3;
+                            position: absolute;
+                            right: 690px;
+                            top: 6845px;
+                            border: 1px solid red;
+                        }
+                        .closeButton:hover{
+                            background-color: #6d3696;
+                            cursor: pointer;
+                        }
+                        /* Button has been commented out */
+                        
+                        .animated-text{
+                            color: #6d3696;
+                            position: relative;
+                            overflow: hidden;
+                            height: 25px;
+                        }
+                        .Welcome{
+                            text-align: left;
+                            line-height: 25px;
+                        }
+                        .Welcome:first-child{
+                            animation: anim 4s 1;
+                            animation-fill-mode: forwards;
+                        }
+                        @keyframes anim{
+                            0% {
+                                margin-top: 0;
+                            }
+                            25% {
+                                margin-top: 0;
+                            }
+                            50% {
+                                margin-top: 0;
+                            }
+                            60% {
+                                margin-top: 0;
+                            }
+                            75% {
+                                margin-top: 0;
+                            }
+                            100% {
+                                margin-top: -25px;
+                            }
+                        }
+                        .slds-small-size .Welcome{
+                            font-size: 0.9rem;
+                        }
+
+                        @media (max-width: 767px){
+                            .Welcome {
+                                font-size: 0.9rem;
+                            }
+                        }
+                        @media (max-width: 502px){
+                            .Welcome {
+                                font-size: 0.68rem;
+                            }
+                        }
+                        @media (max-width: 457px){
+                            .Welcome {
+                                font-size: 0.5rem;
+                            }
+                        }
+                        @media (max-width: 413px){
+                            .Welcome {
+                                font-size: 0.4rem;
+                            }
+                        }
+                        @media (max-width: 365px){
+                            .Welcome {
+                                font-size: 0.3rem;
+                            }
+                        }
+                        @media (max-width: 323px){
+                            .Welcome {
+                                font-size: 0.2rem;
+                            }
+                        }
+                    </style>
+                    <!--END CODE-->
+                </div>
+            </div>
+            <div class="displaySourceCode">
+                <pre>
+                    <code>
+                        &lt;!-- Code has been modified for display purposes --&gt;
+
+                        &lt;div class=&quot;USTExitButton&quot;&gt;
+                        &lt;div class=&quot;animated-text&quot;&gt;
+                            &lt;div class=&quot;Welcome&quot;&gt;
+                                &lt;b&gt;Welcome to the St. Thomas Application! 🎉&lt;/b&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;Welcome&quot;&gt;
+                                &lt;b&gt;Please begin your application to view specific requirements.&lt;/b&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;!-- &lt;button onclick=&quot;webOnlyAlert_closeClicked()&quot; aria-label=&quot;Close&quot; id=&quot;close__message&quot; class=&quot;closeButton&quot; style=&quot;color:#fff;&quot;&gt;
+                            &lt;strong&gt;X&lt;/strong&gt;
+                        &lt;/button&gt; --&gt;
+                    &lt;/div&gt;
+                    &lt;script type=&quot;text/javascript&quot;&gt;
+                        document.addEventListener('DOMContentLoaded', function () {
+                            if (!webOnlyAlert_readCookie(&quot;hide_alert_message&quot;)) {
+                                document.querySelector('.USTExitButton').closest('.slds-card').style.display = 'block';
+                            } else {
+                                document.querySelector('.USTExitButton').closest('.slds-card').style.display = 'none';
+                            }
+                        });
+                        function webOnlyAlert_createCookie(cname, cvalue, exdays) {
+                            const d = new Date();
+                            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+                            let expires = &quot;expires=&quot; + d.toUTCString();
+                            document.cookie = cname + &quot;=&quot; + cvalue + &quot;;&quot; + expires + &quot;;path=/&quot;;
+                        }
+                        function webOnlyAlert_readCookie(a) {
+                            // eslint-disable-next-line
+                            const b = document.cookie.match(&quot;(^|[^;]+)\\s*&quot; + a + &quot;\\s*=\\s*([^;]+)&quot;);
+                            return b ? b.pop() : false;
+                        }
+                        function webOnlyAlert_closeClicked() {
+                            webOnlyAlert_createCookie(&quot;hide_alert_message&quot;, true, 1); // cookie will live for 1 hour. the value is data.exp in the original, allowing the expiration date to come from the JSON object, but I broke that here.
+                            document.querySelector('.USTExitButton').closest('.slds-card').style.display = 'none';
+                        }
+                    &lt;/script&gt;
+
+                    &lt;style&gt;
+                        /* Button has been commented out */
+                        .USTExitButton{
+                            font-size: 1rem;
+                            display: block;
+                            padding: 5px 15px 5px 15px;
+                            border-left: #5f19a0 solid 5px;
+                        }
+                        .USTExitButton .closeButton{
+                            background-color: #911BC3;
+                            position: absolute;
+                            right: 690px;
+                            top: 6845px;
+                            border: 1px solid red;
+                        }
+                        .closeButton:hover{
+                            background-color: #6d3696;
+                            cursor: pointer;
+                        }
+                        /* Button has been commented out */
+                        
+                        .animated-text{
+                            color: #6d3696;
+                            position: relative;
+                            overflow: hidden;
+                            height: 25px;
+                        }
+                        .Welcome{
+                            text-align: left;
+                            line-height: 25px;
+                        }
+                        .Welcome:first-child{
+                            animation: anim 4s 1;
+                            animation-fill-mode: forwards;
+                        }
+                        @keyframes anim{
+                            0% {
+                                margin-top: 0;
+                            }
+                            25% {
+                                margin-top: 0;
+                            }
+                            50% {
+                                margin-top: 0;
+                            }
+                            60% {
+                                margin-top: 0;
+                            }
+                            75% {
+                                margin-top: 0;
+                            }
+                            100% {
+                                margin-top: -25px;
+                            }
+                        }
+                        .slds-small-size .Welcome{
+                            font-size: 0.9rem;
+                        }
+
+                        @media (max-width: 767px){
+                            .Welcome {
+                                font-size: 0.9rem;
+                            }
+                        }
+                        @media (max-width: 502px){
+                            .Welcome {
+                                font-size: 0.68rem;
+                            }
+                        }
+                        @media (max-width: 457px){
+                            .Welcome {
+                                font-size: 0.5rem;
+                            }
+                        }
+                        @media (max-width: 413px){
+                            .Welcome {
+                                font-size: 0.4rem;
+                            }
+                        }
+                        @media (max-width: 365px){
+                            .Welcome {
+                                font-size: 0.3rem;
+                            }
+                        }
+                        @media (max-width: 323px){
+                            .Welcome {
+                                font-size: 0.2rem;
+                            }
+                        }
+                    &lt;/style&gt;
+                    </code>
+                </pre>
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+</body>
+</html>
