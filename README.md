@@ -1,1 +1,1 @@
-# UST-EDA-Showcase
+# Welcome to the UST-EDA-Showcase Repository
